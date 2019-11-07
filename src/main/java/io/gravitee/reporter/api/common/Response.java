@@ -29,6 +29,8 @@ public class Response {
 
     private String body;
 
+    private SSLInfo sslInfo;
+
     public Response() {
     }
 
@@ -58,5 +60,13 @@ public class Response {
 
     public void setBody(String body) {
         this.body = body;
+    }
+
+    public SSLInfo getSslInfo() {
+        return sslInfo;
+    }
+
+    public void setSslInfo(SSLInfo sslInfo) {
+        this.sslInfo = sslInfo;
     }
 }
